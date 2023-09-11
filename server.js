@@ -13,8 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Run when a clients connects
 io.on('connection', socket => {
-    console.log('New WS Connection...');
-
+    // Welcome current user
     socket.emit('message', 'Welcome to ChatCord!');
 
     // Broadcast when a user connects
