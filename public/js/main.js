@@ -54,7 +54,7 @@ function outputMessage(message){
   document.querySelector('.chat-messages').appendChild(div);
 }
 
-// Add rom name to DOM
+// Add room name to DOM
 function outputRoomName(room){
   roomName.innerText = room;
 }
